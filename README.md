@@ -28,10 +28,13 @@ library(circR)
 ### Activty Onset Calculation
 1.) Rolling Mean Calculation:
   - A rolling mean is calculated over a specified window (rolling_onset defualt set to 10 miuntes) to smooth the activity data.
+
 2.) Daily Mean Calculation:
   - The daily mean of bird activity is calculated to set a threshold for sustained activity.
+
 3.) Activity Before CoG (Center of Gravity) Time:
   - The data is filtered to include only the activity before the CoG time.
+
 4.) Sustained Activity Check:
   - The onset time is identified as the first instance when the rolling mean stays above the daily mean for a specified duration (sustained_minutes defualt set to 30 minutes).
 
