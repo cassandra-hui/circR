@@ -6,9 +6,15 @@
 #' @param onset_roll An integer specifying the window size for the rolling mean used to calculate onset times. Default is 10.
 #' @param offset_roll An integer specifying the window size for the rolling mean used to calculate offset times. Default is 30.
 #' @return A data frame containing the combined results with calculated metrics for each cage and date.
-#' @import dplyr
-#' @import zoo
-#' @import ggplot2
+#'
+#' @importFrom dplyr filter
+#' @importFrom dplyr mutate
+#' @importFrom dplyr arrange
+#' @importFrom dplyr select
+#' @importFrom dplyr distinct
+#' @importFrom dplyr bind_rows
+#' @importFrom zoo rollmean
+#' @importFrom magrittr %>%
 #' @examples
 #' # Assuming df is your data frame with the required columns
 #' combined_data <- activity_times(df, onset_roll = 10, offset_roll = 30)

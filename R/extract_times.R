@@ -7,7 +7,16 @@
 #' @return A data frame with the cage number, date, onset time, and offset time for the specified cage.
 #' @import dplyr
 #' @import zoo
-#' @import ggplot2
+#'
+#' @importFrom dplyr filter
+#' @importFrom dplyr mutate
+#' @importFrom dplyr arrange
+#' @importFrom dplyr select
+#' @importFrom dplyr distinct
+#' @importFrom dplyr bind_rows
+#' @importFrom magrittr %>%
+#'
+#'
 #' @examples
 #' # Assuming combined_data is your data frame with the required columns
 #' extract_times(combined_data, 20)

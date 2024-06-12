@@ -6,8 +6,24 @@
 #' @param cage_number An integer specifying the cage number to plot.
 #' @return A ggplot object showing the rolling mean activity for the specified cage, with onset and offset times indicated.
 #' @import dplyr
-#' @import zoo
 #' @import ggplot2
+#'
+#' @importFrom dplyr filter
+#' @importFrom dplyr mutate
+#' @importFrom dplyr arrange
+#' @importFrom dplyr select
+#' @importFrom dplyr distinct
+#' @importFrom dplyr bind_rows
+#' @importFrom ggplot2 ggplot
+#' @importFrom ggplot2 aes
+#' @importFrom ggplot2 geom_line
+#' @importFrom ggplot2 geom_rect
+#' @importFrom ggplot2 geom_point
+#' @importFrom ggplot2 geom_hline
+#' @importFrom ggplot2 facet_wrap
+#' @importFrom ggplot2 labs
+#' @importFrom ggplot2 theme_classic
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' # Assuming combined_data is your data frame with the required columns

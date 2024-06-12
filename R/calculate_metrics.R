@@ -8,7 +8,16 @@
 #' @param offset_roll An integer specifying the window size for the rolling mean used to calculate offset times. Default is 30.
 #' @import dplyr
 #' @import zoo
-#' @import ggplot2
+#'
+#' @importFrom dplyr filter
+#' @importFrom dplyr mutate
+#' @importFrom dplyr arrange
+#' @importFrom dplyr select
+#' @importFrom dplyr distinct
+#' @importFrom dplyr bind_rows
+#' @importFrom zoo rollmean
+#' @importFrom magrittr %>%
+#'
 #' @return A data frame with additional columns for daily mean activity, rolling means for onset and offset,
 #'         and the calculated onset and offset times.
 #' @examples

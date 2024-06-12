@@ -3,7 +3,7 @@
     "path": "~/GitHub/circR/R/activity_times.R",
     "project_path": "R/activity_times.R",
     "type": "r_source",
-    "hash": "4243453886",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1718228452233.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "10,18",
-        "scrollLine": "0"
+        "cursorPosition": "15,27",
+        "scrollLine": "11"
     },
     "folds": "",
-    "lastKnownWriteTime": 1718230403,
+    "lastKnownWriteTime": 1718230882,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1718230403521,
+    "last_content_update": 1718230882300,
     "read_only": false,
     "read_only_alternatives": []
 }

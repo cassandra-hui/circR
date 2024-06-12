@@ -12,6 +12,17 @@
 #'
 #' @import dplyr
 #' @import zoo
+#'
+#' @importFrom dplyr filter
+#' @importFrom dplyr mutate
+#' @importFrom dplyr arrange
+#' @importFrom dplyr select
+#' @importFrom dplyr distinct
+#' @importFrom dplyr bind_rows
+#' @importFrom zoo rollmean
+#' @importFrom magrittr %>%
+#'
+#'
 #' @export
 #'
 #' @examples
