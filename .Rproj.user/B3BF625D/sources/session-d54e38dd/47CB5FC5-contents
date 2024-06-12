@@ -14,7 +14,7 @@
 #' @importFrom dplyr distinct
 #' @importFrom dplyr bind_rows
 #' @importFrom zoo rollmean
-#' @importFrom magrittr %>%
+#' @import magrittr %>%
 #' @examples
 #' # Assuming df is your data frame with the required columns
 #' combined_data <- activity_times(df, onset_roll = 10, offset_roll = 30)

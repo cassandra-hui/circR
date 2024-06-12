@@ -23,7 +23,7 @@
 #' @importFrom ggplot2 facet_wrap
 #' @importFrom ggplot2 labs
 #' @importFrom ggplot2 theme_classic
-#' @importFrom magrittr %>%
+#' @import magrittr %>%
 #'
 #' @examples
 #' # Assuming combined_data is your data frame with the required columns
