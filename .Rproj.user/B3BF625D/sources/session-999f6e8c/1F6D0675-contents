@@ -26,7 +26,7 @@ head(data)
 ################################
 
 #Set working directory
-setwd("~/GitHub/circR/circR/Test")
+setwd("~/GitHub/circR/Test")
 
 #Rename data
 df <- data
