@@ -1,3 +1,17 @@
+#' Calculate Daily Activity Metrics
+#'
+#' This function calculates the daily activity metrics, including rolling means for onset and offset times,
+#' daily mean activity, and the onset and offset times based on sustained activity.
+#'
+#' @param data A data frame containing activity data with columns 'Cage', 'Date', 'HopsPerMinute', and 'timestamp'.
+#' @param onset_roll An integer specifying the window size for the rolling mean used to calculate onset times. Default is 10.
+#' @param offset_roll An integer specifying the window size for the rolling mean used to calculate offset times. Default is 30.
+#' @return A data frame with additional columns for daily mean activity, rolling means for onset and offset,
+#'         and the calculated onset and offset times.
+#' @examples
+#' # Assuming df is your data frame with the required columns
+#' metrics_data <- calculate_metrics(df, onset_roll = 10, offset_roll = 30)
+#' @export
 calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30) {
   data <- data %>%
     arrange(timestamp) %>%

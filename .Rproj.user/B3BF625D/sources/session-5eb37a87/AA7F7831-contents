@@ -16,3 +16,10 @@ extract_times(com_data, 20)
 
 # Plot data for Cage 20
 plot_data(com_data, 20)
+
+
+install.packages("roxygen2")
+install.packages("devtools")
+library(devtools)
+document()
+

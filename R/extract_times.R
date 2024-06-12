@@ -1,4 +1,14 @@
-# Function to extract and print onset and offset times for a specific cage
+#' Extract and Print Onset and Offset Times for a Specific Cage
+#'
+#' This function extracts and prints the onset and offset times for a specific cage from the provided data.
+#'
+#' @param data A data frame containing activity data with columns 'Cage', 'Date', 'onset_time', and 'offset_time'.
+#' @param cage_number An integer specifying the cage number for which to extract and print the onset and offset times.
+#' @return A data frame with the cage number, date, onset time, and offset time for the specified cage.
+#' @examples
+#' # Assuming combined_data is your data frame with the required columns
+#' extract_times(combined_data, 20)
+#' @export
 extract_times <- function(data, cage_number) {
   on_off_times <- data %>%
     filter(Cage == cage_number) %>%
@@ -8,3 +18,4 @@ extract_times <- function(data, cage_number) {
 
   print(on_off_times)
 }
+
