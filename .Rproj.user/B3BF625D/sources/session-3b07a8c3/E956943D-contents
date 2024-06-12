@@ -1,9 +1,0 @@
-extract_times <- function(combined_data, cage_number) {
-  on_off_times <- combined_data %>%
-    filter(Cage == cage_number) %>%
-    select(Cage, Date, onset_time, offset_time) %>%
-    distinct() %>%
-    arrange(Date)
-
-  #print(on_off_times)
-}
