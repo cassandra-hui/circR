@@ -14,7 +14,7 @@
 #' @importFrom dplyr select
 #' @importFrom dplyr distinct
 #' @importFrom dplyr bind_rows
-#' @import magrittr %>%
+#' @importFrom dplyr %>%
 #'
 #'
 #' @examples

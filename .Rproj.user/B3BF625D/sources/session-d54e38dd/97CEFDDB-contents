@@ -16,7 +16,7 @@
 #' @importFrom dplyr distinct
 #' @importFrom dplyr bind_rows
 #' @importFrom zoo rollmean
-#' @import magrittr %>%
+#' @importFrom dplyr %>%
 #'
 #' @return A data frame with additional columns for daily mean activity, rolling means for onset and offset,
 #'         and the calculated onset and offset times.

@@ -20,7 +20,7 @@
 #' @importFrom dplyr distinct
 #' @importFrom dplyr bind_rows
 #' @importFrom zoo rollmean
-#' @import magrittr %>%
+#' @importFrom dplyr %>%
 #'
 #'
 #' @export
