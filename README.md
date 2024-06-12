@@ -25,6 +25,26 @@ library(circR)
 
 ## Finding On- and Offset Times
 
+### Activty Onset Calculation
+1.) Rolling Mean Calculation:
+  - A rolling mean is calculated over a specified window (rolling_onset defualt set to 10 miuntes) to smooth the activity data.
+2.) Daily Mean Calculation:
+  - The daily mean of bird activity is calculated to set a threshold for sustained activity.
+3.) Activity Before CoG (Center of Gravity) Time:
+  - The data is filtered to include only the activity before the CoG time.
+4.) Sustained Activity Check:
+  - The onset time is identified as the first instance when the rolling mean stays above the daily mean for a specified duration (sustained_minutes defualt set to 30 minutes).
+
+### Activity Offset Calculation
+1.) Rolling Mean Calculation:
+- A rolling mean is calculated over a different specified window (rolling_offset default set to 30 minutes) to smooth the activity data. This rolling mean can be set differently from the onset rolling mean which may be useful based on sepcies. Since we work with birds and their activity becomes more speratict in the evening we set a higher rolling mean value to filter out short bursts of activity at night.
+
+2.) Daily Mean Calculation:
+- The daily mean of bird activity is used as a threshold for identifying the end of sustained activity.
+
+3.) Sustained Inactivity Check:
+- The offset time is identified as the last instance when the rolling mean stays above the daily mean before falling below it for the sustained duration.
+
 ### Function: activity_times
 
 This function analyzes your data frame to find onset and offset of activity relative to center point of activity. 
