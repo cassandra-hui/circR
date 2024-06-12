@@ -18,7 +18,7 @@ Before you begin, make sure you have the following prerequisites:
 The provided functions use several R packages. To install them and this package, execute the following code in R:
 
 ```r
-install.packages(c("dplyr", "zoo", "ggplot2", "lubridate"))
+install.packages(c("dplyr", "zoo", "ggplot2", "devtools"))
 devtools::install_github("cassandra-hui/circR")
 library(circR)
 ```
