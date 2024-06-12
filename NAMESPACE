@@ -6,7 +6,7 @@ export(extract_times)
 export(plot_data)
 
 # Import necessary functions from other packages
-importFrom(dplyr, %>%)
+importFrom(magrittr, %>%)
 importFrom(dplyr, filter)
 importFrom(dplyr, mutate)
 importFrom(dplyr, arrange)
