@@ -1,11 +1,11 @@
 Package: circR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Package to Calculate Activity On- and Offset
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Cassandra Hui
+Maintainer: The package maintainer cassandrakay15@gmail.com
+Description: This package is built as a followup tool to the Ouyang package for reformatting hop data. 
+    This package run statistics after reformatting has been comleted.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
