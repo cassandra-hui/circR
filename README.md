@@ -65,6 +65,22 @@ data <- activity_times(df, onset_roll = onset_roll, offset_roll = offset_roll)
 
 ```
 
+Example data is also provided to test the functions without having your own data. 
+
+```r
+
+# Using example data 
+example_data_path <- system.file("extdata", "example_data.rds", package = "circR")
+
+# Create a data frame
+df <- readRDS(example_data_path)
+
+# Run function
+data <- activity_times(df, onset_roll = 10, offset_roll = 30)
+
+
+```
+
 
 ## Extracting Times
 
