@@ -6,6 +6,12 @@ Author: Cassandra Hui
 Maintainer: The package maintainer cassandrakay15@gmail.com
 Description: This package is built as a followup tool to the Ouyang package for reformatting hop data. 
     This package run statistics after reformatting has been comleted.
+Depends: R (>= 3.5.0)
+Imports:
+    dplyr,
+    zoo,
+    ggplot2,
+    roxygen2
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
