@@ -15,4 +15,4 @@ com_data <- activity_times(df, onset_roll = onset_roll, offset_roll = offset_rol
 extract_times(com_data, 20)
 
 # Plot data for Cage 20
-plot_cage_data(com_data, 20)
+plot_data(com_data, 20)
