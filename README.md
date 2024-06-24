@@ -10,8 +10,18 @@ This guide provides step-by-step instructions on how to use the provided R funct
 
 ## Prerequisites
 
-Before you begin, make sure you have the following prerequisites:
-- Properly formatted data in a data frame (Use the Ouyang package or see sample layout).
+Before you begin, make sure you have properly formatted data in a data frame (Use the Ouyang package or see sample layout), and that your data is collected every minute. *This package currently only works with data for every minute.*
+
+Your data should be in a similar format as shown below. This package requires columns named:
+  - Cage (this is inividual Cage or Animal ID)
+  - HopsPerMinute (this is your activity number)
+  - Date
+  - LightsOn (format="%Y-%m-%d %I:%M %p")
+  - LightsOff (format="%Y-%m-%d %I:%M %p")
+  - timestamp 
+
+  ![image](https://github.com/cassandra-hui/circR/assets/116195249/e67a5bdb-198c-484c-a6dc-ed0ff8bfe8ed)
+
 
 ## Installing Required Packages
 
