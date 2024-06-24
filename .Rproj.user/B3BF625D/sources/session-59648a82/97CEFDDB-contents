@@ -24,7 +24,7 @@
 #' # Assuming df is your data frame with the required columns
 #' metrics_data <- calculate_metrics(df, onset_roll = 10, offset_roll = 30)
 #' @export
-calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30) {
+calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30, sustained_minutes = 30) {
   data <- data %>%
     arrange(timestamp) %>%
     mutate(rolling_mean_onset = rollmean(HopsPerMinute, k = onset_roll, fill = NA, align = "right"),
@@ -33,7 +33,7 @@ calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30) {
   daily_mean <- mean(data$HopsPerMinute, na.rm = TRUE)
   cog_time <- as.POSIXct(data$timestamp[floor(nrow(data)/2)], origin="1970-01-01") # CoG time
 
-  onset_time <- find_onset_time(data, cog_time, daily_mean, onset_roll = onset_roll, sustained_minutes = 30)
+  onset_time <- find_onset_time(data, cog_time, daily_mean, onset_roll = onset_roll, sustained_minutes = sustained_minutes)
 
   offset_time <- data %>%
     filter(rolling_mean_offset > daily_mean) %>%

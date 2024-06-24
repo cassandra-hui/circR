@@ -42,7 +42,7 @@
 #' onset_time <- find_onset_time(df, cog_time, daily_mean, onset_roll = 10, sustained_minutes = 30)
 #' print(onset_time)
 
-find_onset_time <- function(df, cog_time, daily_mean, onset_roll = 10, sustained_minutes = 30) {
+find_onset_time <- function(df, cog_time, daily_mean, onset_roll = 10, sustained_minutes) {
   duration_threshold <- sustained_minutes * 60
 
   # Onset: first time activity reaches above the mean and stays above for sustained duration before CoG

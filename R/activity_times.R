@@ -38,7 +38,7 @@ activity_times <- function(data, onset_roll = 10, offset_roll = 30){
         filter(Date == date)
 
       if (nrow(daily_data) > 0) {
-        metrics <- calculate_metrics(daily_data, onset_roll = onset_roll, offset_roll = offset_roll)
+        metrics <- calculate_metrics(daily_data, onset_roll = onset_roll, offset_roll = offset_roll, sustained_minutes = sustained_minutes)
         results[[paste(cage, date, sep = "_")]] <- metrics
       }
     }
