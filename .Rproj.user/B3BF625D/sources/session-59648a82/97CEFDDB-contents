@@ -24,7 +24,7 @@
 #' # Assuming df is your data frame with the required columns
 #' metrics_data <- calculate_metrics(df, onset_roll = 10, offset_roll = 30)
 #' @export
-calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30, sustained_minutes = 30) {
+calculate_metrics <- function(data, onset_roll = 10, offset_roll = 30, sustained_minutes) {
   data <- data %>%
     arrange(timestamp) %>%
     mutate(rolling_mean_onset = rollmean(HopsPerMinute, k = onset_roll, fill = NA, align = "right"),

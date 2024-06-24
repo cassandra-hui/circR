@@ -19,7 +19,7 @@
 #' # Assuming df is your data frame with the required columns
 #' combined_data <- activity_times(df, onset_roll = 10, offset_roll = 30)
 #' @export
-activity_times <- function(data, onset_roll = 10, offset_roll = 30){
+activity_times <- function(data, onset_roll = 10, offset_roll = 30, sustained_minutes = 30){
   # Filter data for all cages
   unique_cages <- unique(data$Cage)
 
