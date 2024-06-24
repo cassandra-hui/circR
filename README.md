@@ -27,7 +27,7 @@ library(circR)
 
 ### Activty Onset Calculation
 1.) Rolling Mean Calculation:
-  - A rolling mean is calculated over a specified window (rolling_onset defualt set to 10 miuntes) to smooth the activity data.
+  - A rolling mean is calculated over a specified window (rolling_onset defualt set to 30 miuntes) to smooth the activity data.
 
 2.) Daily Mean Calculation:
   - The daily mean of bird activity is calculated to set a threshold for sustained activity.
@@ -57,10 +57,14 @@ This function analyzes your data frame to find onset and offset of activity rela
 #Analze activity onset and offset times
 #Select onset and offset rolling means to smooth activity
 onset_roll <- 10
-offset_roll <- 30
+offset_roll <- 25
+sustained_minutes <- 25
 
 #Run function with selected parameters
-data <- activity_times(df, onset_roll = onset_roll, offset_roll = offset_roll)
+data <- activity_times(df, onset_roll = onset_roll, offset_roll = offset_roll, sustained_minutes = sustained_minutes)
+
+#Or Run the function with defualt parameters (all set to 30 miuntes)
+data <- activity_times(df)
 
 
 ```
