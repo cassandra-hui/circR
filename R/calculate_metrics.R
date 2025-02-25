@@ -6,6 +6,7 @@
 #' @param data A data frame containing activity data with columns 'Cage', 'Date', 'HopsPerMinute', and 'timestamp'.
 #' @param onset_roll An integer specifying the window size for the rolling mean used to calculate onset times. Default is 10.
 #' @param offset_roll An integer specifying the window size for the rolling mean used to calculate offset times. Default is 30.
+#' @param sustained_minutes An integer specifying the number of minutes for sustained activity to determine onset times.
 #' @import dplyr
 #' @import zoo
 #'
